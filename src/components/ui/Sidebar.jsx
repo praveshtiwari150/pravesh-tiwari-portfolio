@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { RxCross2 } from "react-icons/rx";
 const Sidebar = ({ className, onClose }) => {
@@ -19,36 +18,36 @@ const Sidebar = ({ className, onClose }) => {
         />
       </div>
       <div className="flex flex-col justify-start items-start gap-6 text-secondary">
-        <Link
-          to={"/about"}
+        <a
+          href="#about"
           className="text-secondary hover:text-highlight hover:underline cursor-pointer"
         >
           About
-        </Link>
-        <Link
-          to={"/skills"}
+        </a>
+        <a
+          href="#skills"
           className="text-secondary hover:text-highlight hover:underline cursor-pointer"
         >
           Skills
-        </Link>
-        <Link
-          to={"/projects"}
+        </a>
+        <a
+          href="#projects"
           className="text-secondary hover:text-highlight hover:underline cursor-pointer"
         >
           Projects
-        </Link>
-        <Link
-          to={"/contact"}
+        </a>
+        <a
+          href="#contact"
           className="text-secondary hover:text-highlight hover:underline cursor-pointer"
         >
           Contact
-        </Link>
-        <Link
-          to={"/resume"}
+        </a>
+        <a
+          href="#resume"
           className="text-secondary hover:text-highlight hover:underline cursor-pointer"
         >
           Resume
-        </Link>
+        </a>
       </div>
     </div>
   );

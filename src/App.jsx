@@ -5,6 +5,9 @@ import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { toggleSidebar } from './store/slice/themeSlice';
 import { useEffect } from 'react';
+import About from './pages/About';
+import Skills from './pages/Skills';
+import Projects from './pages/Projects';
 
 function App() {
   const {mode, isSidebarOpen} = useSelector(state => state.theme)
@@ -25,9 +28,12 @@ function App() {
   },[dispatch, isSidebarOpen])
 
   return (
-   <div className={`${mode} relative bg-glass max-w-full min-h-screen transition-colors ease-in-out duration-300`}>
+   <div className={`${mode} flex flex-col max-w-full min-h-screen transition-colors ease-in-out duration-300`}>
     <Navbar/>
-    {isSidebarOpen && <Sidebar onClose={() => dispatch(toggleSidebar())} className='absolute top-0 right-0'/>}
+    {isSidebarOpen && <Sidebar onClose={() => dispatch(toggleSidebar())} className='fixed top-0 '/>}
+    <About/>
+    <Skills/>
+    <Projects/>
    </div>
   )
 }
