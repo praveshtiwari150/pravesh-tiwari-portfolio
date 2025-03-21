@@ -1,5 +1,9 @@
 import SockeIoIcon from '../assets/socket-io-icon.png';
 import WebrtcIcon from '../assets/webrtc-icon.png'
+import ImaginifyImage from '../assets/imaginify.png';
+import VidiconImage from '../assets/vidicon.png';
+import EcomvisionImage from '../assets/ecomvision.png';
+import TextSummaryImage from '../assets/textsummary.png';
 
 // export const frameworks = [
 //     {
@@ -130,5 +134,44 @@ export const tools = [
         id: 3,
         name : 'AWS',
         path: 'https://img.icons8.com/nolan/64/amazon-web-services.png'
+    }
+]
+
+export const projects = [
+    {
+        id:1,
+        name:'VidiCON - Video Conferencing App',
+        technologies: ['Nodejs', 'Reactjs', 'Websockets', 'WebRTC'],
+        details: "Built a real-time video conferencing app with one-to-many video calls, screen sharing and chat.Integrated WebRTC for video streaming and WebSockets for real-time communication.",
+        image: VidiconImage,
+        link: 'https://star-connection-client.vercel.app/',
+        github: 'https://github.com/praveshtiwari150/VidiCON-Video-Conferencing.git'
+    },
+    {
+        id:2,
+        name: 'Imagnify - Image Editing App',
+        technologies: ["NextJS", "MongoDB","Cloudinary", "Cloudinary API's"],
+        details: "AI-powered image processing app with features like image restoration, recoloring, object removal, generative fill, and background removal.",
+        image: ImaginifyImage,
+        link: 'https://imaginify-official-pqo8rsb78-pravesh-tiwaris-projects.vercel.app/',
+        github: 'https://github.com/praveshtiwari150/imaginify-official'
+    },
+    {
+        id:3,
+        name: 'EcomVision',
+        technologies: ['ReactJS, NodeJS', 'MongoDB', 'Nivo Charts'],
+        details: "Built an interactive data visualization dashboard with graphs and charts.Utilized Nivo Charts to improve data readability",
+        image: EcomvisionImage,
+        link: 'https://dashboard-frontend-nvjj.onrender.com/',
+        github: 'https://github.com/praveshtiwari150/fullstack-dashboard'
+    },
+    {
+        id:4,
+        name: 'Text Summarization Using NLP',
+        technologies: ['Python', 'Flask', 'SpaCy'],
+        details: 'Web app that generates summaries using extractive summarization techniques.',
+        image: TextSummaryImage,
+        link: 'https://drive.google.com/file/d/1aa_RBZi3a0w2chztmMhZNxjPEgc7T28v/view?usp=sharing',
+        github: 'https://github.com/praveshtiwari150/text-summarization-using-nlp'
     }
 ]

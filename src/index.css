@@ -8,6 +8,7 @@
     --custom-grey-1: #94a1b2;
     --custom-blue: #7f5af0;
     --custom-green: #2cb67d;
+    --iridium: #3D3C3A;
 }
 
 .dark{
@@ -54,6 +55,10 @@ p{
   background-color: var(--custom-green);
 }
 
+.bg-iridium{
+  background-color: var(--iridium);
+}
+
 .text-stroke{
   color: var(--custom-dark);
 }
@@ -72,6 +77,10 @@ p{
 
 .text-tertiary{
   color: var(--custom-green);
+}
+
+.text-iridium{
+  color: var(--iridium);
 }
 
 .bg-secondary-1{
