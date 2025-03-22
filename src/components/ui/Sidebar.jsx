@@ -3,6 +3,7 @@ import { useSelector } from "react-redux";
 import { RxCross2 } from "react-icons/rx";
 const Sidebar = ({ className, onClose }) => {
   const { mode } = useSelector((state) => state.theme);
+  const resumeUrl = import.meta.env.VITE_RESUME_LINK;
   return (
     <div
       className={`${className} ${
@@ -43,7 +44,7 @@ const Sidebar = ({ className, onClose }) => {
           Contact
         </a>
         <a
-          href="https://drive.google.com/file/d/1Y2Tdv5BXAlMjNxcqhF-SjO7JPvrkMkXm/view?usp=sharing"
+          href={resumeUrl}
           target="_blank"
           className="text-secondary hover:text-highlight hover:underline cursor-pointer"
         >

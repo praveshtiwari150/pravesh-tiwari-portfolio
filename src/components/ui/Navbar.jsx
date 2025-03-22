@@ -4,10 +4,11 @@ import { TbMenu2 } from "react-icons/tb";
 import { toggleSidebar } from '../../store/slice/themeSlice';
 import { useDispatch } from 'react-redux';
 
+
 const Navbar = () => {
   const {mode} = useSelector(state => state.theme);
   const dispatch = useDispatch();
-
+  const resumeUrl = import.meta.env.VITE_RESUME_LINK;
   const handleSidebar = () => {
     dispatch(toggleSidebar());
   }
@@ -20,7 +21,7 @@ const Navbar = () => {
       <a href="#skills" className='text-secondary hover:text-highlight hover:underline cursor-pointer'>Skills</a>
       <a href="#projects" className='text-secondary hover:text-highlight hover:underline cursor-pointer'>Projects</a>
       <a href="#contact" className='text-secondary hover:text-highlight hover:underline cursor-pointer'>Contact</a>
-        <a href="https://drive.google.com/file/d/1Y2Tdv5BXAlMjNxcqhF-SjO7JPvrkMkXm/view?usp=sharing" target='_blank' className='text-secondary hover:text-highlight hover:underline cursor-pointer'>Resume</a>
+        <a href={resumeUrl} target='_blank' className='text-secondary hover:text-highlight hover:underline cursor-pointer'>Resume</a>
       </div>
       <div className='flex items-center justify-center gap-2'>
       <ThemeButton/>

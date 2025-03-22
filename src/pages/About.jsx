@@ -3,6 +3,7 @@ import pravesh from '../assets/pravesh.png';
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
 
 const About = () => {
+  const resumeUrl = import.meta.env.VITE_RESUME_LINK;
   const [typeEffect] = useTypewriter({
     words: ['Full Stack Web Developer', 'Frontend Developer', 'Backend Developer'],
     loop: {},
@@ -27,7 +28,7 @@ const About = () => {
         <p className='sm:w-sm text-secondary text-justify'>
           Passionate about building scalable web applications and real-time systems. I specialize in modern technologies like React, Next.js, Node.js, and WebRTC to bring innovative ideas to life. Whether it’s crafting smooth user experiences or designing robust backend systems, I’m always driven to create impactful digital solutions.
         </p>
-        <a href="https://drive.google.com/file/d/1Y2Tdv5BXAlMjNxcqhF-SjO7JPvrkMkXm/view?usp=sharing" target='_blank' className='inline-block bg-tertiary text-white cursor-pointer mt-4 px-6 py-2 rounded-lg font-semibold hover:bg-tertiary-dark transition duration-300 ease-in-out transform hover:scale-105'>View My Resume</a>
+        <a href={resumeUrl} target='_blank' className='inline-block bg-tertiary text-white cursor-pointer mt-4 px-6 py-2 rounded-lg font-semibold hover:bg-tertiary-dark transition duration-300 ease-in-out transform hover:scale-105'>View My Resume</a>
       </div>
     </div>
   );
