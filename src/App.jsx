@@ -8,14 +8,15 @@ import { useEffect } from 'react';
 import About from './pages/About';
 import Skills from './pages/Skills';
 import Projects from './pages/Projects';
+import Footer from './pages/Footer';
 
 function App() {
-  const {mode, isSidebarOpen} = useSelector(state => state.theme)
+  const { mode, isSidebarOpen } = useSelector(state => state.theme)
   const dispatch = useDispatch()
 
   useEffect(() => {
     const handleResize = () => {
-      if(window.innerWidth > 768 && isSidebarOpen){
+      if (window.innerWidth > 768 && isSidebarOpen) {
         dispatch(toggleSidebar())
       }
     }
@@ -25,16 +26,17 @@ function App() {
     handleResize();
 
     return () => window.removeEventListener('resize', handleResize);
-  },[dispatch, isSidebarOpen])
+  }, [dispatch, isSidebarOpen])
 
   return (
-   <div className={`${mode} flex flex-col max-w-full min-h-screen transition-colors ease-in-out duration-300`}>
-    <Navbar/>
-    {isSidebarOpen && <Sidebar onClose={() => dispatch(toggleSidebar())} className='fixed top-0 '/>}
-    <About/>
-    <Skills/>
-    <Projects/>
-   </div>
+    <div className={`${mode} flex flex-col max-w-full min-h-screen transition-colors ease-in-out duration-300`}>
+      <Navbar />
+      {isSidebarOpen && <Sidebar onClose={() => dispatch(toggleSidebar())} className='fixed top-0 ' />}
+      <About />
+      <Skills />
+      <Projects />
+      <Footer />
+    </div>
   )
 }
 

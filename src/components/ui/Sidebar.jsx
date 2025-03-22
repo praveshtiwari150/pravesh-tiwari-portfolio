@@ -43,7 +43,8 @@ const Sidebar = ({ className, onClose }) => {
           Contact
         </a>
         <a
-          href="#resume"
+          href="https://drive.google.com/file/d/1Y2Tdv5BXAlMjNxcqhF-SjO7JPvrkMkXm/view?usp=sharing"
+          target="_blank"
           className="text-secondary hover:text-highlight hover:underline cursor-pointer"
         >
           Resume

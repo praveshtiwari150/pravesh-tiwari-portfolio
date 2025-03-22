@@ -44,7 +44,7 @@ export const frontend = [
     {
         id:1,
         name: 'React',
-        path: 'https://img.icons8.com/external-tal-revivo-color-tal-revivo/24/external-react-a-javascript-library-for-building-user-interfaces-logo-color-tal-revivo.png'
+        path: 'https://img.icons8.com/external-tal-revivo-color-tal-revivo/48/external-react-a-javascript-library-for-building-user-interfaces-logo-color-tal-revivo.png'
     },
     {
         id:2,
@@ -159,7 +159,7 @@ export const projects = [
     {
         id:3,
         name: 'EcomVision',
-        technologies: ['ReactJS, NodeJS', 'MongoDB', 'Nivo Charts'],
+        technologies: ['ReactJS', 'NodeJS', 'MongoDB', 'Nivo Charts'],
         details: "Built an interactive data visualization dashboard with graphs and charts.Utilized Nivo Charts to improve data readability",
         image: EcomvisionImage,
         link: 'https://dashboard-frontend-nvjj.onrender.com/',

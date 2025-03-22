@@ -20,7 +20,7 @@ const Navbar = () => {
       <a href="#skills" className='text-secondary hover:text-highlight hover:underline cursor-pointer'>Skills</a>
       <a href="#projects" className='text-secondary hover:text-highlight hover:underline cursor-pointer'>Projects</a>
       <a href="#contact" className='text-secondary hover:text-highlight hover:underline cursor-pointer'>Contact</a>
-      <a href="#resume" className='text-secondary hover:text-highlight hover:underline cursor-pointer'>Resume</a>
+        <a href="https://drive.google.com/file/d/1Y2Tdv5BXAlMjNxcqhF-SjO7JPvrkMkXm/view?usp=sharing" target='_blank' className='text-secondary hover:text-highlight hover:underline cursor-pointer'>Resume</a>
       </div>
       <div className='flex items-center justify-center gap-2'>
       <ThemeButton/>
