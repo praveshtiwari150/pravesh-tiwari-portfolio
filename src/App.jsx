@@ -14,6 +14,7 @@ function App() {
   const { mode, isSidebarOpen } = useSelector(state => state.theme)
   const dispatch = useDispatch()
 
+  const githubLink =
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth > 768 && isSidebarOpen) {

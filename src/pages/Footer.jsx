@@ -3,6 +3,9 @@ import { useSelector } from 'react-redux';
 
 const Footer = () => {
     const { mode } = useSelector(state => state.theme);
+    const githubLink = import.meta.env.VITE_GITHUB_LINK;
+    const linkedinLink = import.meta.env.VITE_LINKEDIN_LINK;
+    const gmailLink = import.meta.env.VITE_GMAIL_LINK;
 
     return (
         <footer id='contact' className={`w-full py-6 backdrop-blur-sm transition-colors duration-500`}>
@@ -11,7 +14,7 @@ const Footer = () => {
                 <div className="flex gap-6">
                     {/* GitHub Link */}
                     <a
-                        href="https://github.com/yourusername"
+                        href={githubLink}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="hover:filter-none filter grayscale transition-all duration-300"
@@ -26,7 +29,7 @@ const Footer = () => {
 
                     {/* LinkedIn Link */}
                     <a
-                        href="https://linkedin.com/in/yourusername"
+                        href={linkedinLink}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="hover:filter-none filter grayscale transition-all duration-300"
@@ -41,7 +44,7 @@ const Footer = () => {
 
                     {/* Gmail Link */}
                     <a
-                        href="mailto:youremail@example.com"
+                        href={gmailLink}
                         className="hover:filter-none filter grayscale transition-all duration-300"
                         aria-label="Gmail"
                     >
