@@ -1,5 +1,5 @@
 import React from 'react';
-import pravesh from '../assets/pravesh.png';
+import pravesh from '../assets/pravesh.jpg';
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
 
 const About = () => {
